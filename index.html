@@ -5,16 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock Paper Scissors Game</title>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 
 <body>
 
   <h1>Rock Paper Scissors Game</h1>
 
-  <button onclick="playGame('rock')">Rock</button>
-  <button onclick="playGame('paper')">Paper</button>
-  <button onclick="playGame('scissors')">Scissors</button>
+  <div class="choices">
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
+  </div>
 
   <p id="result"></p>
 

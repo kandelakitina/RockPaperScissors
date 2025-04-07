@@ -19,5 +19,12 @@ function playGame(userChoice) {
       break;
   }
 
-  document.getElementById('result').textContent = `You chose ${userChoice}, computer chose ${computerChoice}. ${result}`;
+  document.querySelector('#result').textContent = `You chose ${userChoice}, computer chose ${computerChoice}. ${result}`;
 }
+
+let choices = document.querySelector(".choices");
+choices.addEventListener('click', function(event) {
+  let choice = event.target.id;
+  if (!choice) return;
+  playGame(choice);
+});
